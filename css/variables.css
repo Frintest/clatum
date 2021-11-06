@@ -1,0 +1,18 @@
+:root {
+	--bg-body: #fcfcfc;
+	--color-title: #222;
+	--color-sub-title: #111;
+	--size-title: 46px;
+	--size-sub-title: 18px;
+	--letter-spacing-title: 1px;
+	--letter-spacing-sub-title: 0.5px;
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-bold: 700;
+	--weight-extra-bold: 800;
+	--montserrat: 'Montserrat', sans-serif;
+	--rubik: 'Rubik', sans-serif;
+	--gordita: 'Gordita', sans-serif;
+	--transition: 0.3s;
+	--hover: #ff490c;
+}

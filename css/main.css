@@ -1,0 +1,581 @@
+@import './variables.css';
+@import './fonts.css';
+@import './reset.css';
+@import './media.css';
+
+canvas {
+	display: block;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--bg-body);
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.title {
+	width: 100%;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-extra-bold);
+	font-size: var(--size-title);
+	color: var(--color-title);
+	letter-spacing: var(--letter-spacing-title);
+	text-align: center;
+}
+
+.sub-title {
+	font-family: var(--rubik);
+	font-weight: var(--weight-regular);
+	font-size: var(--size-sub-title);
+	color: var(--color-sub-title);
+	letter-spacing: var(--letter-spacing-sub-title);
+	line-height: 28px;
+}
+
+.sub-tile-medium {
+	font-weight: var(--weight-medium);
+}
+
+.section {
+	margin: 100px 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.page-main-screen-wrapper {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/********** page header **********/
+.page-header__container {
+	height: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 60px auto 0 auto;
+}
+
+.page-header__cat {
+	position: relative;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-extra-bold);
+	font-size: 14px;
+	color: var(--color-sub-title);
+	letter-spacing: var(--letter-spacing-sub-title);
+}
+
+.page-header__cat::before {
+	content: '';
+	width: 0;
+	height: 150%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	background: var(--hover);
+	transition: var(--transition);
+	z-index: -1;
+}
+
+.page-header__cat:hover::before {
+	width: 100%;
+}
+
+.page-header__logo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.page-header__icon {
+	z-index: 35;
+	position: relative;
+	width: 30px;
+	height: 13px;
+	cursor: pointer;
+}
+
+.page-header__icon span,
+.page-header__icon::after {
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	transition: var(--transition);
+	background: var(--color-sub-title);
+}
+
+.page-header__icon.active span,
+.page-header__icon.active::after {
+	background: #fff;
+}
+
+.page-header__icon::after {
+	content: '';
+	bottom: 0;
+}
+
+.page-header__icon.active span {
+	top: 50%;
+	transform: rotate(-45deg) translate(0, -50%);
+}
+
+.page-header__icon.active::after {
+	bottom: 50%;
+	transform: rotate(45deg) translate(0, 50%);
+}
+
+.menu__body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.94);
+	transform: translate(-100%, 0);
+	transition: var(--transition);
+	z-index: 30;
+}
+
+.menu__body.active {
+	transform: translate(0, 0);
+}
+
+.menu__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menu__list>li {
+	margin: 40px 0;
+}
+
+.menu__link {
+	position: relative;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-bold);
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: var(--letter-spacing-title);
+}
+
+.menu__link::before {
+	content: '';
+	width: 0;
+	height: 150%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	background: var(--hover);
+	transition: var(--transition);
+	z-index: -1;
+}
+
+.menu__link:hover::before {
+	width: 100%;
+}
+
+/********** page main block **********/
+.page-main-block {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background: url(../img/main-block-bg.svg) center no-repeat;
+	background-size: cover;
+}
+
+.page-main-block__title {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.page-main-block__btn-wrap {
+	position: relative;
+	margin: 0 0 60px 0;
+}
+
+.page-main-block__btn {
+	width: 120px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 50%;
+	background: var(--bg-body);
+	border: 2px solid var(--color-title);
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.page-main-block__sponsor {
+	max-width: 90px;
+	position: absolute;
+	top: 50%;
+	left: -150px;
+	transform: translate(0, -50%);
+	font-family: var(--montserrat);
+	font-weight: var(--weight-extra-bold);
+	font-size: 12px;
+	color: #333;
+	letter-spacing: var(--letter-spacing-sub-title);
+	line-height: 15px;
+}
+
+.page-main-block__sponsor::before {
+	content: '';
+	width: 14px;
+	height: 2px;
+	position: absolute;
+	top: -5px;
+	left: -2px;
+	background: #333;
+}
+
+.page-main-block__svg {
+	transition: var(--transition);
+}
+
+.page-main-block__btn:hover {
+	background: var(--color-title);
+}
+
+.page-main-block__btn:hover .page-main-block__svg {
+	fill: #fff;
+}
+
+.page-main-block__btn:active {
+	background: var(--bg-body);
+	transition: 0s;
+}
+
+.page-main-block__btn:active .page-main-block__svg {
+	fill: var(--color-title);
+}
+
+/********** page physics **********/
+.page-physics__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.page-physics__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 56px 0 0 0;
+	padding: 0 54px;
+}
+
+.page-physics__title-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.page-physics__title {
+	font-size: 30px;
+	margin: 0 0 0 15px;
+	text-align: left;
+}
+
+.page-physics__video {
+	width: 300px;
+	height: 168px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 47px;
+	background: url(../img/noise.png) center no-repeat;
+	border: 4px solid #333;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.page-physics__video[data-id='quantum'] {
+	margin: 0 0 0 64px;
+}
+
+.page-physics__btn {
+	width: 75px;
+	height: 75px;
+	background: var(--color-title);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: var(--transition);
+}
+
+.page-physics__comparison {
+	margin: 200px 0 0 0;
+}
+
+.page-physics__comparison-block {
+	margin: 60px 0 0 0;
+}
+
+.page-physics__comparison-item {
+	flex: 0 1 820px;
+	margin: 0 0 0 100px;
+}
+
+.page-physics__comparison-item-title {
+	font-size: 36px;
+	text-align: left;
+}
+
+.page-physics__comparison-item-sub-title {
+	margin: 15px 0 0 0;
+}
+
+.page-physics__comparison-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-physics__comparison-svg {
+	flex: 0 0 256px;
+}
+
+.page-physics__video-player-wrap {
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.94);
+	transition: var(--transition);
+	z-index: 34;
+}
+
+.page-physics__video-player-wrap.active {
+	display: flex;
+}
+
+.page-physics__video-player-wrap>video {
+	display: none;
+}
+
+.player__btn-icon {
+	z-index: 35;
+	position: absolute;
+	top: 60px;
+	right: 100px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.player__btn-icon span,
+.player__btn-icon::after {
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	transition: var(--transition);
+	background: var(--color-sub-title);
+}
+
+.player__btn-icon span,
+.player__btn-icon::after {
+	background: #fff;
+}
+
+.player__btn-icon::after {
+	content: '';
+	bottom: 0;
+}
+
+.player__btn-icon span {
+	top: 50%;
+	transform: rotate(-45deg) translate(0, -50%);
+}
+
+.player__btn-icon::after {
+	bottom: 50%;
+	transform: rotate(45deg) translate(0, 50%);
+}
+
+/********** page expert opinion **********/
+.page-expert-opinion__sub-title {
+	font-weight: var(--weight-medium);
+	font-size: 24px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.page-expert-opinion__player {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page-expert-opinion__btn {
+	width: 85px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: var(--bg-body);
+	border: 2px solid var(--color-title);
+	cursor: pointer;
+}
+
+.page-expert-opinion__volume-track {
+	-webkit-appearance: none;
+	width: 100px;
+	height: 5px;
+	position: absolute;
+	background: var(--color-title);
+	border-radius: 0;
+	border: 0;
+	top: 50%;
+	left: 120px;
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+
+.page-expert-opinion__volume-track::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 18px;
+	height: 25px;
+	background: var(--color-title);
+	transition: var(--transition);
+}
+
+.page-expert-opinion__volume-track::-webkit-slider-thumb:active {
+	box-shadow: 0 0 10px #fff;
+}
+
+.page-expert-opinion__volume-track::-moz-range-thumb {
+	width: 18px;
+	height: 25px;
+	background: var(--color-title);
+	border-radius: 0;
+	border: 0;
+}
+
+.page-expert-opinion__volume-track::-moz-range-thumb:active {
+	box-shadow: 0 0 10px #fff;
+}
+
+.page-expert-opinion__volume-track::-ms-thumb {
+	width: 18px;
+	height: 25px;
+	background: var(--color-title);
+	border-radius: 0;
+	border: 0;
+}
+
+.page-expert-opinion__volume-track::-ms-thumb:active {
+	box-shadow: 0 0 10px #fff;
+}
+
+/********** page output **********/
+.page-output__sub-title {
+	max-width: 920px;
+	margin: 15px auto 0 auto;
+}
+
+/********** page footer **********/
+.page-footer {
+	padding: 32px 0 70px 0;
+	background: var(--color-title);
+	letter-spacing: var(--letter-spacing-title);
+}
+
+.page-footer__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-footer__item {
+	margin: 38px 0 0 0;
+	flex: 0 0 320px;
+}
+
+.page-footer__title {
+	font-family: var(--montserrat);
+	font-weight: var(--weight-bold);
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: var(--letter-spacing-title);
+}
+
+.page-footer__sub-title {
+	margin: 5px 0 0 0;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-medium);
+	font-size: 14px;
+	color: #aaa;
+	letter-spacing: var(--letter-spacing-title);
+}
+
+.page-footer__bottom {
+	margin: 38px 0 0 0;
+}
+
+.page-footer__icons {
+	display: flex;
+	align-items: center;
+}
+
+.page-footer__link-svg {
+	margin: 0 20px 0 0;
+}
+
+.page-footer__icon {
+	width: 35px;
+}
+
+.page-footer__link-svg .page-footer__icon path {
+	transition: var(--transition);
+}
+
+.page-footer__link-svg:hover .page-footer__icon path {
+	fill: #ff490c;
+}
+
+.page-footer__link-svg:active .page-footer__icon path {
+	fill: #fff;
+	transition: 0s;
+}

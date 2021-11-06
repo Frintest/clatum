@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#ff490c">
+	<meta name="keywords" content="физика, классическая, квантовая">
+	<meta name="description" content="Сравнение классической и квантовой физики на опыте.">
+	<title>Clatum – классическая физика или квантовая?</title>
+	<link rel="icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="page-main-screen-wrapper">
+			<!-- page header -->
+			<header class="page-header">
+				<div class="page-header__container container">
+					<a href="#!" class="page-header__cat uppercase">кот шредингера</a>
+
+					<img class="page-header__logo" src="./img/site-logo.svg" alt="логотип сайта">
+
+					<div class="page-header__menu">
+						<div class="page-header__icon">
+							<span class="page-header__line"></span>
+						</div>
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#page-physics-title" class="menu__link uppercase">физика</a></li>
+								<li><a href="#page-physics-expert-opinion-title" class="menu__link uppercase">мнение
+										эксперта</a></li>
+								<li><a href="#page-output-title" class="menu__link uppercase">вывод</a></li>
+								<li><a href="#!" class="menu__link uppercase">материалы</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- page main block -->
+			<section class="page-main-block">
+				<img class="page-main-block__title" src="./img/main-block-title.svg" alt="что выбрать?">
+
+				<div class="page-main-block__btn-wrap">
+					<span class="page-main-block__sponsor uppercase">frintest production</span>
+
+					<a class="page-main-block__btn" href="#page-physics-title">
+						<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0H33V33H0V0Z" fill="none" />
+							<path class="page-main-block__svg" d="M16.5 33L2.21058 8.25L30.7894 8.25L16.5 33Z" fill="#222" />
+						</svg>
+					</a>
+				</div>
+			</section>
+		</div>
+
+		<canvas class="page-main-block__canvas"></canvas>
+
+		<!-- page main -->
+		<main class="page-main">
+			<!-- page physics -->
+			<section class="page-physics section">
+				<div class="page-physics__container container">
+					<h2 class="title uppercase" id="page-physics-title">физика</h2>
+
+					<div class="page-physics__list">
+						<div class="page-physics__item">
+							<div class="page-physics__title-wrap">
+								<svg width="36" height="52" viewBox="0 0 36 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M18 8.125C12.5857 8.125 8.18182 12.4983 8.18182 17.875C8.18182 18.7728 8.91409 19.5 9.81818 19.5C10.7223 19.5 11.4545 18.7728 11.4545 17.875C11.4545 14.2898 14.3918 11.375 18 11.375C18.9041 11.375 19.6364 10.6478 19.6364 9.75C19.6364 8.85219 18.9041 8.125 18 8.125ZM9.82432 46.6345C9.82432 46.9544 9.91943 47.2662 10.0984 47.5323L12.6051 51.2738C12.9089 51.7268 13.4202 51.999 13.9674 51.999H22.0316C22.5798 51.999 23.0911 51.7268 23.3939 51.2738L25.9006 47.5323C26.0785 47.2662 26.1736 46.9534 26.1747 46.6345L26.1798 42.249H9.82023L9.82432 46.6345ZM18 0C7.53955 0 0 8.42664 0 17.875C0 22.3813 1.68239 26.4926 4.455 29.6339C6.15682 31.5626 8.82614 35.6058 9.81614 38.9939V39H14.7252V38.9878C14.7242 38.5034 14.6516 38.022 14.5053 37.5588C13.9336 35.75 12.1715 30.9806 8.14705 26.4205C6.04636 24.0409 4.92341 21.0224 4.9142 17.875C4.89375 10.3959 11.0168 4.875 18 4.875C25.2184 4.875 31.0909 10.7067 31.0909 17.875C31.0909 21.0204 29.9414 24.0551 27.854 26.4205C23.8541 30.9512 22.0837 35.7104 21.5028 37.5375C21.3529 38.0073 21.2763 38.4971 21.2758 38.9898V39H26.1849V38.9949C27.1749 35.6058 29.8442 31.5626 31.546 29.6349C34.3176 26.4926 36 22.3813 36 17.875C36 8.00313 27.9409 0 18 0Z"
+										fill="#222" />
+								</svg>
+								<h3 class="page-physics__title title uppercase">Классическая</h3>
+							</div>
+
+							<div class="page-physics__video" data-id="classic">
+								<div class="page-physics__btn">
+									<svg class="page-physics__svg" width="33" height="33" viewBox="0 0 33 33" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 0H33V33H0V0Z" fill="none" />
+										<path d="M33 16.5L8.25 30.7894L8.25 2.21058L33 16.5Z" fill="#fff" />
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-physics__item">
+							<div class="page-physics__title-wrap">
+								<svg width="57" height="52" viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17.7675 0.00403705C17.4078 -0.00440987 17.0653 0.004037 16.7314 0.020933L16.7228 0.0293805C15.9607 0.0885133 15.1901 0.282803 14.4709 0.637598V0.646044C12.9638 1.39787 12.0476 2.81704 11.5596 4.29535C11.0715 5.7821 10.9345 7.42091 10.9602 9.21178C11.003 11.4335 11.5253 14.0268 12.2959 16.73C10.9773 17.0595 9.72715 17.4312 8.57119 17.8451C6.2336 18.6898 4.24707 19.6951 2.72292 20.9706C1.19021 22.2462 0 23.9357 0 25.9546C0 28.2777 1.27583 30.2037 2.80854 31.53C4.34982 32.8647 6.19078 33.7686 7.97181 34.4612L9.56446 30.4234C8.08312 29.8574 6.6446 29.0971 5.70271 28.2861C4.76939 27.4752 4.38407 26.7825 4.38407 25.9546C4.38407 25.6167 4.59813 25.0592 5.54002 24.2736C6.48191 23.4964 8.066 22.6348 10.0782 21.9083C11.14 21.5282 12.3388 21.1818 13.6146 20.8777C14.1712 22.3814 14.7877 23.8766 15.4213 25.3464C12.0048 32.5268 10.8831 39.403 10.9602 43.8041C11.0115 46.7608 12.1076 49.3964 14.3253 50.8155C15.7638 51.7279 17.5876 52.184 19.4886 51.9306C21.3809 51.6772 23.3075 50.7986 25.3796 49.3372L22.8451 45.8231C21.1497 47.0142 19.8225 47.521 18.8892 47.6477C17.9558 47.766 17.3736 47.6139 16.7143 47.1831C16.0121 46.7354 15.3785 45.7302 15.3442 43.7281C15.2929 40.7884 15.9693 35.948 17.9216 30.6768C18.2812 31.3695 18.6323 32.0537 18.9834 32.6957H18.9748C21.3124 36.9701 24.8231 42.0893 28.4964 45.992C30.3288 47.9434 32.1869 49.5907 34.1135 50.6888C35.9802 51.7448 38.1979 52.3107 40.2444 51.3984C42.0511 50.7817 43.1728 49.1936 43.7208 47.4788C44.2859 45.6879 44.4315 43.593 44.2774 41.2192C43.952 36.4802 42.3251 30.6514 39.1912 24.9325L35.338 26.9768C38.1722 32.172 39.6279 37.5192 39.9019 41.5064C40.0389 43.5085 39.8591 45.1642 39.5337 46.1779C39.2169 47.1916 38.8915 47.3521 38.8487 47.369L38.6432 47.4197L38.4633 47.5126C38.215 47.6393 37.59 47.6731 36.3056 46.9382C35.0126 46.2032 33.3686 44.8094 31.716 43.0523C28.4022 39.5297 24.9858 34.5795 22.8451 30.6514C21.9974 29.0971 21.124 27.2978 20.2763 25.3887C20.8757 24.2567 21.5265 23.1332 22.2628 22.0181C22.8109 21.1734 23.376 20.3624 23.9411 19.543C24.5833 19.5261 25.217 19.467 25.8677 19.467C27.1264 19.467 28.4108 19.5008 29.7295 19.5684C36.7166 19.9232 42.8132 21.2916 46.9489 23.0825C49.0125 23.9695 50.5709 24.9747 51.4871 25.8871C52.4119 26.7994 52.6431 27.4667 52.6088 28.0074C52.6088 28.151 52.3519 28.7677 51.3073 29.4603C50.2541 30.153 48.5672 30.8204 46.5293 31.1836L47.2914 35.4412C49.8174 34.9934 52.018 34.1909 53.7391 33.0505C55.4687 31.9101 56.8816 30.3304 56.9929 28.227C57.0956 26.1743 56.0767 24.2989 54.5953 22.8375C53.114 21.3677 51.1103 20.1597 48.7043 19.1206C43.8835 17.0341 37.3759 15.6318 29.9606 15.2433C28.9845 15.201 28.0255 15.1841 27.0665 15.1757C28.7533 12.9456 30.423 10.9435 31.9986 9.2878C35.0897 6.06087 37.9581 4.37982 39.2768 4.32914C39.8505 4.31225 40.1759 4.41361 40.4499 4.58256C41.015 4.95425 41.76 5.83279 41.7171 7.33644C41.6829 8.49374 41.1863 10.7239 40.5612 12.1008L44.5599 13.8579C45.4847 11.8389 46.0413 9.45675 46.1012 7.4547C46.1783 4.48964 44.6969 2.14969 42.8388 0.958599C41.7171 0.249012 40.3985 -0.0381997 39.1141 0.00403705C35.3979 0.147643 32.2041 2.77481 28.8133 6.32274C26.4157 8.82319 23.9754 11.9234 21.5693 15.3108C19.8996 15.4376 18.2641 15.6065 16.7057 15.8515C15.9094 13.199 15.3785 10.8083 15.3442 9.1442C15.3185 7.64899 15.4727 6.41566 15.7296 5.63005C15.995 4.83599 16.2604 4.59946 16.4659 4.49809C16.6286 4.41361 16.7999 4.36293 17.0568 4.34603C18.2384 4.25311 20.6531 4.75151 22.9821 6.89717L25.9705 3.73782C23.2219 1.20358 20.2421 0.113854 17.7675 0.00403705ZM18.3668 20.0161C18.3155 20.109 18.2641 20.1935 18.2127 20.2864C18.1785 20.2104 18.1442 20.1259 18.1185 20.0414C18.2042 20.033 18.2898 20.0245 18.3668 20.0161ZM28.4964 21.6295C26.0732 21.6295 24.1124 23.564 24.1124 25.9546C24.1124 28.3453 26.0732 30.2797 28.4964 30.2797C30.9197 30.2797 32.8805 28.3453 32.8805 25.9546C32.8805 23.564 30.9197 21.6295 28.4964 21.6295Z"
+										fill="#222" />
+								</svg>
+								<h3 class="page-physics__title title uppercase">квантовая</h3>
+							</div>
+
+							<div class="page-physics__video" data-id="quantum">
+								<div class="page-physics__btn">
+									<svg class="page-physics__svg" width="33" height="33" viewBox="0 0 33 33" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 0H33V33H0V0Z" fill="none" />
+										<path d="M33 16.5L8.25 30.7894L8.25 2.21058L33 16.5Z" fill="#fff" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="page-physics__comparison">
+						<div class="page-physics__comparison-block">
+							<svg class="page-physics__comparison-svg" width="256" height="164" viewBox="0 0 256 164"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M69.25 44.5V119.5M106.75 44.5V119.5M50.5 82H125.5M50.5 63.25H69.25M50.5 100.75H69.25M106.75 100.75H125.5M106.75 63.25H125.5M254.5 24.5L174 82L254.5 139.5V24.5ZM24.5 1.5H151C163.703 1.5 174 11.7975 174 24.5V139.5C174 152.203 163.703 162.5 151 162.5H24.5C11.7975 162.5 1.5 152.203 1.5 139.5V24.5C1.5 11.7975 11.7975 1.5 24.5 1.5ZM58.675 44.5H117.325C121.84 44.5 125.5 48.16 125.5 52.675V111.325C125.5 115.84 121.84 119.5 117.325 119.5H58.675C54.16 119.5 50.5 115.84 50.5 111.325V52.675C50.5 48.16 54.16 44.5 58.675 44.5Z"
+									stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+
+							<div class="page-physics__comparison-item">
+								<h3 class="page-physics__comparison-item-title title uppercase">1. что лучше</h3>
+								<p class="page-physics__comparison-item-sub-title sub-title">Хорошо и то, и другое, но квантовая
+									физика
+									точнее, сложнее и непонятней. Мы можем сравнить эти виды на опыте.</p>
+								<p class="page-physics__comparison-item-sub-title sub-title">Представим, что у нас есть пушка
+									стреляющая
+									электронами, и нам нужно измерить скорость вылетевшего электрона. чтобы это сделать, нужно
+									сфотографировать его через долю секунды после вылета. Так мы узнаем где он оказался, <span
+										class="sub-tile-medium">поделим
+										пройденный путь на время, и вычислим скорость</span>. И кажется всё, мы нашли скорость. И
+									если бы мы
+									пользовались классической физикой, то были бы правы.</p>
+							</div>
+						</div>
+
+						<div class="page-physics__comparison-block">
+							<svg class="page-physics__comparison-svg" width="245" height="179" viewBox="0 0 245 179"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.04175 89.5001C1.04175 89.5001 45.2084 1.16675 122.5 1.16675C199.792 1.16675 243.958 89.5001 243.958 89.5001C243.958 89.5001 199.792 177.833 122.5 177.833C45.2084 177.833 1.04175 89.5001 1.04175 89.5001Z"
+									stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path
+									d="M122.5 122.625C140.794 122.625 155.625 107.794 155.625 89.5C155.625 71.2056 140.794 56.375 122.5 56.375C104.206 56.375 89.375 71.2056 89.375 89.5C89.375 107.794 104.206 122.625 122.5 122.625Z"
+									stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+
+							<div class="page-physics__comparison-item">
+								<h3 class="page-physics__comparison-item-title title uppercase">2. что не так?</h3>
+								<p class="page-physics__comparison-item-sub-title sub-title">Теперь электрон может лететь
+									совершенно <span class="sub-tile-medium">с другой скоростью</span>. фотографируя, мы его
+									осветили, и
+									фотон отразившись, мог вполне
+									изменить скорость электрона. Так что после измерения, как это ни странно, <span
+										class="sub-tile-medium">мы не знаем точно
+										текущей скорости</span> электрона, только приблизительно.</p>
+								<p class="page-physics__comparison-item-sub-title sub-title">Всё это следствие фундаментального
+									соображения квантовой физики - <span class="sub-tile-medium">принципа
+										неопределённости</span>.
+									Он гласит, что невозможно предельно
+									точно измерить 2 связанные величины.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="page-physics__video-player-wrap">
+					<video data-id="classic" src="" width="1000" controls></video>
+					<video data-id="quantum" src="./video/quantum.mp4" width="1000" controls></video>
+
+					<div class="player__btn-icon">
+						<span></span>
+					</div>
+				</div>
+			</section>
+
+			<!-- page expert opinion -->
+			<section class="page-expert-opinion section">
+				<div class="page-expert-opinion__container container">
+					<h2 class="title uppercase" id="page-physics-expert-opinion-title">мнение эксперта</h2>
+
+					<p class="page-expert-opinion__sub-title sub-title">Дмитрий Побединский</p>
+
+					<div class="page-expert-opinion__player">
+						<div class="page-expert-opinion__btn">
+							<svg class="page-expert-opinion__play" width="33" height="33" viewBox="0 0 33 33" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0H33V33H0V0Z" fill="none" />
+								<path d="M33 16.5L8.25 30.7894L8.25 2.21058L33 16.5Z" fill="#222" />
+							</svg>
+
+							<svg class="page-expert-opinion__pause" width="21" height="25" viewBox="0 0 21 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M16 0H21V25H16V0Z" fill="#222" />
+								<path d="M0 0H5V25H0V0Z" fill="#222" />
+							</svg>
+						</div>
+
+						<input class="page-expert-opinion__volume-track" type="range" min="0" max="100" step="1" value="50">
+					</div>
+				</div>
+			</section>
+
+			<!-- page output -->
+			<section class="page-output section">
+				<div class="page-output__container container">
+					<h2 class="title uppercase" id="page-output-title">вывод</h2>
+					<p class="page-output__sub-title sub-title"><span class="sub-tile-medium">Важно всё</span>. Нужно
+						учитывать
+						где именно использовать
+						тот или иной вид физики. Например
+						при небольших и не критичных вычислениях лучше использовать <span class="sub-tile-medium">классичеcкую
+							физику</span>, а вот при вычислениях
+						важных и сложных расчётов - <span class="sub-tile-medium">квантовую</span>.</p>
+				</div>
+			</section>
+		</main>
+
+		<!-- page footer -->
+		<footer class="page-footer">
+			<div class="page-footer__container container">
+				<div class="page-footer__top">
+					<ul class="page-footer__list uppercase">
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">название конкурса</h5>
+							<p class="page-footer__sub-title">сделай сайт своими руками</p>
+						</li>
+
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">название учреждения</h5>
+							<p class="page-footer__sub-title">маоу до «цдтт»</p>
+						</li>
+
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">преподаватель</h5>
+							<p class="page-footer__sub-title">ерофеева елена валентиновна</p>
+						</li>
+
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">название проекта</h5>
+							<p class="page-footer__sub-title">clatum</p>
+						</li>
+
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">дата разработки</h5>
+							<p class="page-footer__sub-title">26.10.2021 - 05.11.2021</p>
+						</li>
+
+						<li class="page-footer__item">
+							<h5 class="page-footer__title">автор</h5>
+							<p class="page-footer__sub-title">рузаев дмитрий романович</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="page-footer__bottom">
+					<div class="page-footer__icons">
+						<a href="https://vk.com/alcesthub" class="page-footer__link-svg">
+							<svg class="page-footer__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M3.37413 3.37413C0 6.74826 0 12.1788 0 23.04V24.96C0 35.8212 0 41.2517 3.37413 44.6259C6.74826 48 12.1788 48 23.04 48H24.96C35.8212 48 41.2517 48 44.6259 44.6259C48 41.2517 48 35.8212 48 24.96V23.04C48 12.1788 48 6.74826 44.6259 3.37413C41.2517 0 35.8212 0 24.96 0H23.04C12.1788 0 6.74826 0 3.37413 3.37413ZM8.10012 14.6001C8.36012 27.0801 14.6001 34.5801 25.5401 34.5801H26.1602V27.4401C30.1802 27.8401 33.22 30.7801 34.44 34.5801H40.1201C38.5601 28.9001 34.4599 25.7601 31.8999 24.5601C34.4599 23.0801 38.0599 19.4801 38.9199 14.6001H33.7598C32.6398 18.5601 29.3202 22.1601 26.1602 22.5001V14.6001H21V28.4401C17.8 27.6401 13.7601 23.7601 13.5801 14.6001H8.10012Z"
+									fill="#fff" />
+							</svg>
+						</a>
+
+						<a href="https://t.me/AlcestHub" class="page-footer__link-svg">
+							<svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+								<path fill="#fff"
+									d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
+								</path>
+							</svg>
+						</a>
+
+						<a href="https://github.com/AlcestHub" class="page-footer__link-svg">
+							<svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+								<path fill="#fff"
+									d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+								</path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./js/index.js"></script>
+	<script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

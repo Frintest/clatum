@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-medium.eot');
+	src: url('../fonts/montserrat-medium.woff') format('woff'),
+		url('../fonts/montserrat-medium.ttf') format('truetype'),
+		url('../fonts/montserrat-medium.otf') format('truetype'),
+		url('../fonts/montserrat-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-extra-bold.eot');
+	src: url('../fonts/montserrat-extra-bold.woff') format('woff'),
+		url('../fonts/montserrat-extra-bold.ttf') format('truetype'),
+		url('../fonts/montserrat-extra-bold.otf') format('truetype'),
+		url('../fonts/montserrat-extra-bold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/rubik-regular.eot');
+	src: url('../fonts/rubik-regular.woff') format('woff'),
+		url('../fonts/rubik-regular.ttf') format('truetype'),
+		url('../fonts/rubik-regular.otf') format('truetype'),
+		url('../fonts/rubik-regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/rubik-medium.eot');
+	src: url('../fonts/rubik-medium.woff') format('woff'),
+		url('../fonts/rubik-medium.ttf') format('truetype'),
+		url('../fonts/rubik-medium.otf') format('truetype'),
+		url('../fonts/rubik-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gordita';
+	src: url('../fonts/gordita-medium.eot');
+	src: url('../fonts/gordita-medium.woff') format('woff'),
+		url('../fonts/gordita-medium.ttf') format('truetype'),
+		url('../fonts/gordita-medium.otf') format('truetype'),
+		url('../fonts/gordita-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
