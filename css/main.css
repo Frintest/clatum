@@ -247,7 +247,7 @@ body.lock {
 	transform: translate(0, -50%);
 	font-family: var(--montserrat);
 	font-weight: var(--weight-extra-bold);
-	font-size: 12px;
+	font-size: 13px;
 	color: #333;
 	letter-spacing: var(--letter-spacing-sub-title);
 	line-height: 15px;
@@ -381,7 +381,7 @@ body.lock {
 	left: 0;
 	background: rgba(0, 0, 0, 0.94);
 	transition: var(--transition);
-	z-index: 34;
+	z-index: 28;
 }
 
 .page-physics__video-player-wrap.active {
