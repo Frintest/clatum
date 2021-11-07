@@ -6,7 +6,7 @@ const headerMenuActive = () => {
 
 	if (iconMenu) {
 		iconMenu.addEventListener('click', () => {
-			// document.body.classList.toggle('lock');
+			document.body.classList.toggle('lock');
 			iconMenu.classList.toggle('active');
 			menuBody.classList.toggle('active');
 		});
@@ -14,7 +14,7 @@ const headerMenuActive = () => {
 		links.forEach((link) => {
 			link.addEventListener('click', () => {
 				if (iconMenu.classList.contains('active')) {
-					// document.body.classList.remove('lock');
+					document.body.classList.remove('lock');
 					iconMenu.classList.remove('active');
 					menuBody.classList.remove('active');
 				}
