@@ -45,4 +45,125 @@
 	.sub-title {
 		font-size: 17px;
 	}
+
+	/********** page physics **********/
+	.page-physics__title {
+		font-size: 28px;
+	}
+
+	.page-physics__comparison-block:first-child {
+		margin: 0;
+	}
+
+	.page-physics__comparison-item {
+		padding: 0 10px;
+	}
+
+	.page-physics__comparison-item-title {
+		font-size: 34px;
+	}
+
+	/********** page expert opinion **********/
+	.page-expert-opinion__sub-title {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		max-width: 1240px;
+		padding: 0 20px;
+	}
+
+	.title {
+		font-size: 34px;
+	}
+
+	.sub-title {
+		font-size: 16px;
+	}
+
+	/********** page header **********/
+	.menu__list>li {
+		margin: 30px 0;
+	}
+
+	/********** page physics **********/
+	.page-physics__title {
+		font-size: 26px;
+	}
+
+	.page-physics__video {
+		width: 272px;
+		height: 150px;
+	}
+
+	/********** page expert opinion **********/
+	.page-expert-opinion__sub-title {
+		font-size: 22px;
+	}
+
+	.page-expert-opinion__volume-track {
+		top: 140%;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+
+	/********** page output **********/
+	.page-output__container {
+		margin: 120px 0 0 0;
+	}
+
+	/********** page footer **********/
+	.page-footer__container {
+		padding: 0 40px;
+	}
+
+	.page-footer__sub-title {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 460px) {
+
+	/********** page main block **********/
+	.page-main-block__btn {
+		width: 100px;
+		height: 100px;
+	}
+
+	.page-main-block__sponsor {
+		display: none;
+	}
+}
+
+@media (max-width: 420px) {
+
+	/********** page header **********/
+	.menu__link {
+		font-size: 28px;
+	}
+
+	/********** page physics **********/
+	.page-physics {
+		margin: 10px 0 100px 0;
+	}
+}
+
+@media (max-width: 360px) {
+
+	/********** page header **********/
+	.menu__link {
+		font-size: 24px;
+	}
+
+	/********** page physics **********/
+	.page-physics__comparison-item-title {
+		font-size: 28px;
+	}
+
+	/********** page footer **********/
+	.page-footer__container {
+		padding: 0 20px;
+	}
 }

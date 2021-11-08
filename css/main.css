@@ -23,9 +23,9 @@ body.lock {
 }
 
 .container {
-	max-width: 1280px;
+	max-width: 1300px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 50px;
 }
 
 .title {
@@ -477,10 +477,6 @@ body.lock {
 	transition: var(--transition);
 }
 
-.page-expert-opinion__volume-track::-webkit-slider-thumb:active {
-	box-shadow: 0 0 10px #fff;
-}
-
 .page-expert-opinion__volume-track::-moz-range-thumb {
 	width: 18px;
 	height: 25px;
@@ -541,7 +537,7 @@ body.lock {
 }
 
 .page-footer__sub-title {
-	margin: 5px 0 0 0;
+	margin: 6px 0 0 0;
 	font-family: var(--montserrat);
 	font-weight: var(--weight-medium);
 	font-size: 14px;

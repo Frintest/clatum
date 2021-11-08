@@ -27,7 +27,13 @@ const material = new THREE.MeshPhongMaterial({
 	color: 0x000000
 });
 const torus = new THREE.Mesh(geometry, material);
-scene.add(torus);
+
+const width = window.innerWidth;
+
+if (width > 520) {
+	scene.add(torus);
+}
+
 
 // ***** light *****
 const directionalLight = new THREE.DirectionalLight(0xcccccc);
@@ -50,6 +56,7 @@ const onWindowResize = () => {
 onWindowResize();
 
 // ***** render function *****
+
 const animate = () => {
 	requestAnimationFrame(animate);
 	renderer.render(scene, camera);
