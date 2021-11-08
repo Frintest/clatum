@@ -1,0 +1,48 @@
+@media (max-width: 1000px) {
+
+	/********** page physics **********/
+	.page-physics__comparison-block {
+		justify-content: center;
+	}
+
+	.page-physics__list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.page-physics__comparison-item {
+		margin: 0;
+		flex: 0 1 626px;
+	}
+
+	.page-physics__comparison-svg {
+		display: none;
+	}
+
+	/********** page output **********/
+	.page-output__sub-title {
+		max-width: 680px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	/********** page header **********/
+	.page-header__cat {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.section {
+		margin: 80px 0;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	.sub-title {
+		font-size: 17px;
+	}
+}
