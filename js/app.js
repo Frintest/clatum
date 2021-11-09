@@ -22,7 +22,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height);
 
 // ***** loader rorus *****
-const geometry = new THREE.TorusGeometry(4, 2, 30, 50);
+const geometry = new THREE.TorusGeometry(4, 2, 30, 60);
 const material = new THREE.MeshPhongMaterial({
 	color: 0x000000
 });
