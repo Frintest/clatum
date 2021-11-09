@@ -19,9 +19,21 @@
 		display: none;
 	}
 
+	.page-physics__video-player-wrap>video {
+		max-width: 780px;
+	}
+
 	/********** page output **********/
 	.page-output__sub-title {
-		max-width: 680px;
+		max-width: 700px;
+	}
+}
+
+@media (max-width: 900px) {
+
+	/********** page physics **********/
+	.page-physics__video-player-wrap>video {
+		max-width: 630px;
 	}
 }
 
@@ -63,9 +75,21 @@
 		font-size: 34px;
 	}
 
+	.page-physics__video-player-wrap>video {
+		max-width: 520px;
+	}
+
 	/********** page expert opinion **********/
 	.page-expert-opinion__sub-title {
 		font-size: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	/********** page physics **********/
+	.page-physics__video-player-wrap>video {
+		max-width: 400px;
 	}
 }
 
@@ -96,6 +120,10 @@
 	.page-physics__video {
 		width: 272px;
 		height: 150px;
+	}
+
+	.page-physics__video-player-wrap>video {
+		max-width: 300px;
 	}
 
 	/********** page expert opinion **********/

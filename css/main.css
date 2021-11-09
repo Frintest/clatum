@@ -377,6 +377,7 @@ body.lock {
 	background: rgba(0, 0, 0, 0.94);
 	transition: var(--transition);
 	z-index: 28;
+	padding: 0 20px;
 }
 
 .page-physics__video-player-wrap.active {
@@ -385,13 +386,13 @@ body.lock {
 
 .page-physics__video-player-wrap>video {
 	display: none;
+	max-width: 920px;
 }
 
 .player__btn-icon {
 	z-index: 35;
 	position: absolute;
-	top: 60px;
-	right: 100px;
+	top: 45px;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
