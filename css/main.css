@@ -64,6 +64,9 @@ body.lock {
 	position: absolute;
 }
 
+/********** index.html *********/
+/*********************************/
+
 /********** page header **********/
 .page-header__container {
 	height: 25px;
@@ -74,16 +77,17 @@ body.lock {
 	margin: 60px auto 0 auto;
 }
 
-.page-header__cat {
+.page-header__link-check {
 	position: relative;
 	font-family: var(--montserrat);
 	font-weight: var(--weight-extra-bold);
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--color-sub-title);
 	letter-spacing: var(--letter-spacing-sub-title);
+	z-index: 10;
 }
 
-.page-header__cat::before {
+.page-header__link-check::before {
 	content: '';
 	width: 0;
 	height: 150%;
@@ -95,7 +99,7 @@ body.lock {
 	z-index: -1;
 }
 
-.page-header__cat:hover::before {
+.page-header__link-check:hover::before {
 	width: 100%;
 }
 
@@ -574,4 +578,76 @@ body.lock {
 .page-footer__link-svg:active .page-footer__icon path {
 	fill: #fff;
 	transition: 0s;
+}
+
+.page-footer__link-svg:visited .page-footer__icon path {
+	fill: #fff;
+}
+
+/********** contact.html *********/
+/*********************************/
+
+/********** page contact **********/
+.page-contact__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-contact__input-wrap {
+	margin: 0 0 55px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-contact__input-text {
+	width: 100%;
+	font-family: var(--montserrat);
+	font-weight: var(--weight-extra-bold);
+	font-size: 24px;
+	color: var(--color-title);
+	letter-spacing: var(--letter-spacing-title);
+}
+
+.page-contact__input {
+	margin: 15px 0 0 0;
+	padding: 15px 20px;
+	border: 2px solid var(--color-sub-title);
+	font-family: var(--montserrat);
+	font-weight: var(--weight-regular);
+	font-size: 18px;
+	color: var(--color--subtitle);
+	letter-spacing: var(--letter-spacing-sub-title);
+	caret-color: var(--color-sub-title);
+}
+
+.page-contact__message {
+	resize: vertical;
+}
+
+.page-contact__submit {
+	padding: 18px 55px;
+	background: var(--hover);
+	font-family: var(--montserrat);
+	font-weight: var(--weight-bold);
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: var(--letter-spacing-title);
+	border: 0;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.page-contact__submit:hover {
+	background: var(--color-sub-title);
+}
+
+.page-contact__submit:active {
+	background: var(--hover);
+	transition: 0s;
+}
+
+.page-contact__google-map {
+	flex: 0 1 700px;
+	padding: 0 0 0 50px;
+	border: 0;
 }

@@ -51,22 +51,23 @@ const playVideoPhysics = () => {
 	videos.forEach((video) => {
 		video.addEventListener('click', () => {
 			videoPlayerWrap.classList.add('active');
+			document.body.classList.add('lock');
 
 			if (video.dataset.id == 'classic') {
 				videoPlayerWrapClassic.style.display = 'block';
+				videoPlayerWrapClassic.play();
 			}
 
 			if (video.dataset.id == 'quantum') {
 				videoPlayerWrapQuantum.style.display = 'block';
+				videoPlayerWrapQuantum.play();
 			}
-
-			document.body.classList.add('lock');
 
 			btnPlayerExit.addEventListener('click', () => {
 				document.body.classList.remove('lock');
 				videoPlayerWrap.classList.remove('active');
-				videoPlayerWrapClassic.style.display = 'none';
-				videoPlayerWrapQuantum.style.display = 'none';
+				videoPlayerWrapClassic.pause();
+				videoPlayerWrapQuantum.pause();
 			});
 		});
 	});

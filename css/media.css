@@ -35,13 +35,27 @@
 	.page-physics__video-player-wrap>video {
 		max-width: 630px;
 	}
+
+	/********** page contact **********/
+	.page-contact__container {
+		flex-direction: column;
+	}
+
+	.page-contact__google-map {
+		padding: 50px 0 0 0;
+	}
 }
 
 @media (max-width: 768px) {
 
 	/********** page header **********/
-	.page-header__cat {
+	.page-header__link-check {
 		display: none;
+	}
+
+	/********** page contact **********/
+	.page-contact__google-map {
+		max-height: 350px;
 	}
 }
 
