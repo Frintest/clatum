@@ -37,9 +37,9 @@ html::-ms-scrollbar-thumb {
 }
 
 html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	scrollbar-width: thin;
 	scrollbar-color: var(--hover) var(--bg-body);
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {

@@ -46,6 +46,14 @@
 	}
 }
 
+@media (max-width: 839px) {
+
+	/********** page experiments **********/
+	.page-experiments__list {
+		justify-content: center;
+	}
+}
+
 @media (max-width: 768px) {
 
 	/********** page header **********/
@@ -186,9 +194,51 @@
 		font-size: 28px;
 	}
 
+	/********** page experiments **********/
+	.page-experiments__item {
+		width: 250px;
+		height: 250px;
+	}
+
+	.page-experiments__title {
+		font-size: 26px;
+	}
+
+	.page-experiments__sub-title {
+		font-size: 18px;
+	}
+
 	/********** page physics **********/
 	.page-physics {
 		margin: 10px 0 100px 0;
+	}
+}
+
+@media (max-width: 400px) {
+
+	/********** page materials **********/
+	.page-materials__title {
+		font-size: 22px;
+	}
+
+	.page-materials__link {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 355px) {
+
+	/********** page materials **********/
+	.page-materials__list {
+		margin: 18px 0 0 0;
+	}
+
+	.page-materials__title {
+		font-size: 21px;
+	}
+
+	.page-materials__link {
+		font-size: 14px;
 	}
 }
 
