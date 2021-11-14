@@ -768,15 +768,12 @@ canvas {
 	color: var(--color-title);
 }
 
-.page-materials__list {
-	margin: 20px 0 0 0;
-}
-
 .page-materials__item {
-	margin: 12px 0 0 0;
+	margin: 20px 0;
 }
 
 .page-materials__link {
+	margin: 20px 0;
 	position: relative;
 	font-weight: var(--weight-medium);
 	font-size: 18px;

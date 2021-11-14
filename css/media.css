@@ -229,8 +229,8 @@
 @media (max-width: 355px) {
 
 	/********** page materials **********/
-	.page-materials__list {
-		margin: 18px 0 0 0;
+	.page-materials__item {
+		margin: 18px 0;
 	}
 
 	.page-materials__title {
@@ -238,6 +238,7 @@
 	}
 
 	.page-materials__link {
+		margin: 18px 0;
 		font-size: 14px;
 	}
 }
