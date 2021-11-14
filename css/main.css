@@ -645,12 +645,13 @@ canvas {
 	height: 100%;
 	background: var(--bg-body);
 	z-index: 40;
+	overflow-y: scroll;
 }
 
 .page-experiments__wrap {
 	display: flex;
 	justify-content: center;
-	margin: 110px auto 0 auto;
+	margin: 110px auto 100px auto;
 }
 
 .page-experiments__text {
