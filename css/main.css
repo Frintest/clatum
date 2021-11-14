@@ -247,7 +247,7 @@ canvas {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	background: url(/img/main-block-bg.svg) center no-repeat;
+	background: url(../img/main-block-bg.svg) center no-repeat;
 	background-size: cover;
 }
 
@@ -359,7 +359,7 @@ canvas {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(/img/noise.png) center no-repeat;
+	background: url(../img/noise.png) center no-repeat;
 	border: 4px solid #333;
 	cursor: pointer;
 	transition: var(--transition);
