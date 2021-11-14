@@ -201,6 +201,7 @@ canvas {
 	transform: translate(-100%, 0);
 	transition: var(--transition);
 	z-index: 30;
+	overflow-y: scroll;
 }
 
 .menu__body.active {
@@ -605,7 +606,6 @@ canvas {
 	width: 350px;
 	height: 350px;
 	margin: 20px;
-	background: var(--color-title);
 	cursor: pointer;
 	transition: var(--transition);
 	display: flex;
@@ -613,9 +613,20 @@ canvas {
 	align-items: center;
 }
 
+.page-experiments__item[data-id='shroedinger-cat'] {
+	background: url(../img/shroedinger-cat.png) center no-repeat;
+}
+
+.page-experiments__item[data-id='electron-diffraction'] {
+	background: url(../img/electron-diffraction.png) center no-repeat;
+}
+
+.page-experiments__item[data-id='heated-fullerenes'] {
+	background: url(../img/heated-fullerenes.png) center no-repeat;
+}
+
 .page-experiments__item:hover {
-	background: var(--hover);
-	transform: scale(1.12);
+	transform: scale(1.13);
 }
 
 .page-experiments__offer {
