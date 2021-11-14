@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'TTNormsPro';
-	src: url('./fonts/tt-norms-pro.eot');
-	src: url('./fonts/tt-norms-pro-medium.woff') format('woff'),
-		url('./fonts/tt-norms-pro-medium.ttf') format('truetype'),
-		url('./fonts/tt-norms-pro-medium.otf') format('truetype'),
-		url('./fonts/tt-norms-pro-medium.svg') format('svg');
+	src: url('../fonts/tt-norms-pro-medium.eot');
+	src: url('../fonts/tt-norms-pro-medium.woff') format('woff'),
+		url('../fonts/tt-norms-pro-medium.ttf') format('truetype'),
+		url('../fonts/tt-norms-pro-medium.otf') format('truetype'),
+		url('../fonts/tt-norms-pro-medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
 	font-family: 'TTNormsPro';
-	src: url('./fonts/tt-norms-pro-extra-bold.eot');
-	src: url('./fonts/tt-norms-pro-extra-bold.woff') format('woff'),
-		url('./fonts/tt-norms-pro-extra-bold.ttf') format('truetype'),
-		url('./fonts/tt-norms-pro-extra-bold.otf') format('truetype'),
-		url('./fonts/tt-norms-pro-extra-bold.svg') format('svg');
+	src: url('../fonts/tt-norms-pro-extra-bold.eot');
+	src: url('../fonts/tt-norms-pro-extra-bold.woff') format('woff'),
+		url('../fonts/tt-norms-pro-extra-bold.ttf') format('truetype'),
+		url('../fonts/tt-norms-pro-extra-bold.otf') format('truetype'),
+		url('../fonts/tt-norms-pro-extra-bold.svg') format('svg');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;

@@ -8,8 +8,8 @@ const playVideoPhysics = () => {
 		const btnPlayerExit = document.querySelector('.page-physics__btn-exit');
 
 		const srcVideo = [
-			'../../video/classic.mp4',
-			'../../video/quantum.mp4'
+			'./video/classic.mp4',
+			'./video/quantum.mp4'
 		];
 
 		videos.forEach((video) => {

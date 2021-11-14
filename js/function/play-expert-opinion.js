@@ -6,7 +6,7 @@ const playExpertOpinion = () => {
 		const play = document.querySelector('.page-expert-opinion__play');
 		const pause = document.querySelector('.page-expert-opinion__pause');
 
-		const audio = new Audio('../../audio/opinion.mp3');
+		const audio = new Audio('./audio/opinion.mp3');
 		const volume = document.querySelector('.page-expert-opinion__volume-track');
 
 		audio.volume = Number(volume.value) / 100;
