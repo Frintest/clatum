@@ -1,5 +1,6 @@
-@import './variables.css';
-@import './fonts.css';
+@import 'variables.css';
+@import 'reset.css';
+@import 'fonts.css';
 
 html {
 	scroll-behavior: smooth;
@@ -567,11 +568,13 @@ canvas {
 }
 
 .page-footer__link-svg {
-	margin: 0 20px 0 0;
+	margin: 0 15px 0 0;
 }
 
 .page-footer__icon {
-	width: 35px;
+	width: 50px;
+	height: 50px;
+	fill: #fff;
 }
 
 .page-footer__link-svg .page-footer__icon path {
