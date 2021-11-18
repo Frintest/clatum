@@ -1,4 +1,4 @@
-# AXIT
-Сайт для конкурса ДМИП-IT (2021)
+# CLATUM
+Сравнение классической и квантовой физики на опыте.
 
-**Ссылка на [GitHub Pages](https://frintest.github.io/axit/)**
+**Ссылка на [GitHub Pages](https://frintest.github.io/clatum/)**
