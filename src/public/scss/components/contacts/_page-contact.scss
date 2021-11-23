@@ -1,0 +1,78 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.page-contact {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__input-wrap {
+		margin: 0 0 55px 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__input-text {
+		width: 100%;
+		font-weight: fonts.$weight-extra-bold;
+		font-size: 24px;
+		color: colors.$color-title;
+		letter-spacing: fonts.$letter-spacing-title;
+	}
+
+	&__input {
+		margin: 15px 0 0 0;
+		padding: 15px 20px;
+		border: 2px solid colors.$color-sub-title;
+		font-weight: fonts.$weight-regular;
+		font-size: 18px;
+		color: colors.$color-sub-title;
+		letter-spacing: fonts.$letter-spacing-sub-title;
+		caret-color: colors.$color-sub-title;
+	}
+
+	#input-text-name {
+		text-transform: capitalize;
+	}
+
+	&__message {
+		resize: vertical;
+	}
+
+	&__button {
+		margin: -10px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__submit {
+		margin: 20px 0 0 0;
+		max-width: 300px;
+		padding: 18px 55px;
+		background: colors.$hover;
+		font-weight: fonts.$weight-extra-bold;
+		font-size: 18px;
+		color: #fff;
+		letter-spacing: fonts.$letter-spacing-title;
+		border: 0;
+		cursor: pointer;
+		transition: sizes.$transition;
+
+		&:hover {
+			background: colors.$color-sub-title;
+		}
+
+		&:active {
+			background: colors.$hover;
+			transition: 0s;
+		}
+	}
+
+	&__google-map {
+		flex: 0 1 700px;
+		padding: 0 0 0 50px;
+		border: 0;
+	}
+}

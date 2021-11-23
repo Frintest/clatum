@@ -1,0 +1,97 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.page-experiments {
+	&__list {
+		margin: -20px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 350px;
+		height: 350px;
+		margin: 20px;
+		cursor: pointer;
+		transition: sizes.$transition;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&[data-id='shroedinger-cat'] {
+			background: url(../img/shroedinger-cat.png) center no-repeat;
+		}
+
+		&[data-id='electron-diffraction'] {
+			background: url(../img/electron-diffraction.png) center no-repeat;
+		}
+
+		&[data-id='heated-fullerenes'] {
+			background: url(../img/heated-fullerenes.png) center no-repeat;
+		}
+
+		&:hover {
+			transform: scale(1.13);
+		}
+	}
+
+	&__offer {
+		color: #fff;
+	}
+
+	&__title {
+		font-weight: fonts.$weight-extra-bold;
+		font-size: 32px;
+		letter-spacing: fonts.$letter-spacing-title;
+		line-height: 36px;
+	}
+
+	&__sub-title {
+		margin: 10px 0 0 0;
+		font-weight: fonts.$weight-medium;
+		font-size: 20px;
+		letter-spacing: fonts.$letter-spacing-sub-title;
+	}
+
+	&__wrap-block {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: colors.$bg-body;
+		z-index: 40;
+		overflow-y: scroll;
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		margin: 110px auto 100px auto;
+	}
+
+	&__text {
+		margin: 20px 0 0 0;
+		max-width: 900px;
+		font-weight: fonts.$weight-regular;
+		font-size: 20px;
+		color: colors.$color-sub-title;
+		letter-spacing: fonts.$letter-spacing-sub-title;
+
+		&:first-child {
+			margin: 0;
+		}
+	}
+
+	&__btn-exit-wrap {
+		background: colors.$bg-body;
+	}
+
+	&__btn-exit span,
+	&__btn-exit::after {
+		background: colors.$color-sub-title;
+	}
+}

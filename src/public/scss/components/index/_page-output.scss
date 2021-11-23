@@ -1,0 +1,8 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.page-output__sub-title {
+	max-width: 900px;
+	margin: 15px auto 0 auto;
+}
