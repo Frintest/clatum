@@ -5,10 +5,11 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
-	user-select: none;
+}
+
+* {
+	margin: 0;
 }
 
 *:focus-visible {
@@ -82,19 +83,9 @@ body {
 body {
 	background: colors.$bg-body;
 	font-family: fonts.$tt-norms-pro;
+	-webkit-font-smoothing: antialiased;
 
 	&.lock {
 		overflow: hidden;
 	}
-}
-
-.wrapper {
-	min-height: 100%;
-	overflow: hidden;
-}
-
-.container {
-	max-width: 1300px;
-	margin: 0 auto;
-	padding: 0 50px;
 }

@@ -37,7 +37,7 @@ function init() {
 	loader.load('../models/bust.glb', (glb) => {
 		model = glb.scene.children[0];
 		model.position.y = -0.03;
-		// model.rotation.z = 2;
+		model.rotation.z = 2;
 
 		scene.add(model);
 	});
@@ -70,7 +70,7 @@ function init() {
 	const animate = () => {
 		requestAnimationFrame(animate);
 
-		// model.rotation.z -= 0.005;
+		model.rotation.z -= 0.005;
 
 		renderer.render(scene, camera);
 	};
