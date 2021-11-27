@@ -1,6 +1,6 @@
-@use 'abstracts/colors';
-@use 'abstracts/fonts';
-@use 'abstracts/sizes';
+@use 'abstracts/_colors';
+@use 'abstracts/_fonts';
+@use 'abstracts/_sizes';
 
 *,
 *::before,
@@ -10,6 +10,7 @@
 
 * {
 	margin: 0;
+	padding: 0;
 }
 
 *:focus-visible {

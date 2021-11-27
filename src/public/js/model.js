@@ -34,7 +34,7 @@ function init() {
 	let model = null;
 
 	const loader = new GLTFLoader();
-	loader.load('../models/bust.glb', (glb) => {
+	loader.load('./models/bust.glb', (glb) => {
 		model = glb.scene.children[0];
 		model.position.y = -0.03;
 		model.rotation.z = 2;

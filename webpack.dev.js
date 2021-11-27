@@ -1,19 +1,40 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	mode: 'development',
 	context: path.resolve(__dirname, 'src/public'),
 	entry: {
-		main: {
+		index: {
 			import: './index.js',
+			filename: 'js/[name].js'
+		},
+
+		experiments: {
+			import: './experiments/experiments.js',
+			filename: 'js/[name].js'
+		},
+
+		contacts: {
+			import: './contacts/contacts.js',
+			filename: 'js/[name].js'
+		},
+
+		materials: {
+			import: './materials/materials.js',
 			filename: 'js/[name].js'
 		}
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist/public'),
 		clean: true
+	},
+	optimization: {
+		splitChunks: {
+			chunks: 'all',
+			minSize: 0
+		}
 	},
 	module: {
 		rules: [
@@ -79,23 +100,23 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
-			template: './index.html',
-			inject: 'body'
+			chunks: ['index'],
+			template: './index.html'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'experiments.html',
-			template: './experiments.html',
-			inject: 'body'
+			chunks: ['experiments'],
+			template: './experiments/experiments.html'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'contacts.html',
-			template: './contacts.html',
-			inject: 'body'
+			chunks: ['contacts'],
+			template: './contacts/contacts.html'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'materials.html',
-			template: './materials.html',
-			inject: 'body'
+			chunks: ['materials'],
+			template: './materials/materials.html'
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css'

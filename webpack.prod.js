@@ -10,55 +10,139 @@ const {
 module.exports = {
 	mode: 'production',
 	context: path.resolve(__dirname, 'src', 'public'),
+
 	entry: {
-		main: {
+		index: {
 			import: './index.js',
-			filename: '[name].js'
+			filename: 'js/[name].js'
+		},
+
+		experiments: {
+			import: './experiments/experiments.js',
+			filename: 'js/[name].js'
+		},
+
+		contacts: {
+			import: './contacts/contacts.js',
+			filename: 'js/[name].js'
+		},
+
+		materials: {
+			import: './materials/materials.js',
+			filename: 'js/[name].js'
 		}
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist', 'public'),
+		path: path.resolve(__dirname, 'dist/public'),
 		clean: true
 	},
 	optimization: {
+		splitChunks: {
+			chunks: 'all',
+			minSize: 0
+		},
 		minimizer: [
 			new CssMinimizerPlugin(),
 			new TerserPlugin()
 		]
 	},
 	module: {
-		rules: [{
-				test: /\.js$/,
-				exclude: '/node_modules/',
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-env']
-					}
-				}
-			},
+		rules: [
+			// // ? ===== js =====
+			// {
+			// 	test: /\.js$/,
+			// 	exclude: '/node_modules/',
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		options: {
+			// 			presets: ['@babel/preset-env']
+			// 		}
+			// 	}
+			// },
+
+			// ? ===== css =====
 			{
-				test: /\.css$/i,
+				test: /\.(css)$/i,
 				use: [MiniCssExtractPlugin.loader, 'css-loader']
 			},
+
+			// ? ===== scss =====
 			{
-				test: /\.s[ac]ss$/,
+				test: /\.(s[ac]ss)$/i,
 				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
 			},
+
+			// ? ===== fonts =====
 			{
-				test: /\.(woff2|woff|svg|ttf|otf|eot)$/i,
-				type: './asset/resource',
-				exclude: '/img/'
+				test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'fonts/[name][ext]'
+				}
+			},
+
+			// ? ===== img =====
+			{
+				test: /\.(png|jpe?g|gif|svg|webp)$/i,
+				type: 'asset/resource',
+				exclude: /fonts/,
+				generator: {
+					filename: 'img/[name][ext]'
+				}
+			},
+
+			// ? ===== audio =====
+			{
+				test: /\.(mp3)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'audio/[name][ext]'
+				}
+			},
+
+			// ? ===== video =====
+			{
+				test: /\.(mp4)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'video/[name][ext]'
+				}
+			},
+
+			// ? ===== gltf =====
+			{
+				test: /\.(gltf|glb)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'models/[name][ext]'
+				}
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: 'index.html'
+			filename: 'index.html',
+			chunks: ['index'],
+			template: './index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'experiments.html',
+			chunks: ['experiments'],
+			template: './experiments/experiments.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'contacts.html',
+			chunks: ['contacts'],
+			template: './contacts/contacts.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'materials.html',
+			chunks: ['materials'],
+			template: './materials/materials.html'
 		}),
 		new MiniCssExtractPlugin({
-			filename: './css/[name].css'
+			filename: 'css/[name].css'
 		}),
-		new BundleAnalyzerPlugin()
+		// new BundleAnalyzerPlugin()
 	]
 };
