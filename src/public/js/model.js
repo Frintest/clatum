@@ -5,20 +5,12 @@ import {
 	GLTFLoader
 } from '../three/GLTFLoader.js';
 
-let scene, camera, renderer, canvas, sizes;
-
-function init() {
-	// ===== variables =====
-	sizes = {
-		width: window.innerWidth,
-		height: window.innerHeight
-	};
+const init = () => {
+	// ? ======= variables =======
+	let scene, camera, renderer, canvas;
 
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0xfcf6f6);
-
-	camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-	camera.position.set(0, 0, 0.8);
 
 	canvas = document.querySelector('.webgl');
 
@@ -27,10 +19,13 @@ function init() {
 		antialias: true
 	});
 
-	renderer.setSize(sizes.width, sizes.height);
-	renderer.setPixelRatio(Math.min(window.devicePixelRatio), 2);
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setPixelRatio(window.devicePixelRatio);
 
-	// ===== loaderModel =====
+	camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight);
+	camera.position.set(0, 0, 0.9);
+
+	// ? ======= loaderModel =======
 	let model = null;
 
 	const loader = new GLTFLoader();
@@ -42,37 +37,37 @@ function init() {
 		scene.add(model);
 	});
 
-	// ===== spotLight =====
+	// ? ======= spotLight =======
 	const spotLight = new THREE.SpotLight(0xf7f7e8, 1.3);
 	spotLight.position.set(1, 1, 10);
 	scene.add(spotLight);
 
-	// ===== onWindowResize =====
-	const onWindowResize = () => {
+	// ? ======= resize =======
+	const resize = () => {
 		window.addEventListener('resize', () => {
-			// ? update sizes
-			sizes.width = window.innerWidth;
-			sizes.height = window.innerHeight;
+			const w = window.innerWidth;
+			const h = window.innerHeight;
+			renderer.setSize(w, h);
+			camera.aspect = w / h;
 
-			// ? update camera
-			camera.aspect = window.innerWidth / window.innerHeight;
 			camera.updateProjectionMatrix();
-
-			// ? update renderer
-			renderer.setSize(window.innerWidth, window.innerHeight);
-			renderer.setPixelRatio(Math.min(window.devicePixelRatio), 2);
 		});
 	};
 
-	onWindowResize();
+	resize();
 
-	// ===== animate =====
+	// ? ======= render =======
+	const render = () => {
+		renderer.render(scene, camera);
+	};
+
+	// ? ======= animate =======
 	const animate = () => {
 		requestAnimationFrame(animate);
 
 		model.rotation.z -= 0.005;
 
-		renderer.render(scene, camera);
+		render();
 	};
 
 	animate();

@@ -20,39 +20,9 @@
 		justify-content: center;
 		align-items: center;
 
-		&[data-id='shroedinger-cat'] {
-			background: url(../../../img/shroedinger-cat.png) center no-repeat;
-		}
-
-		&[data-id='electron-diffraction'] {
-			background: url(../../../img/electron-diffraction.png) center no-repeat;
-		}
-
-		&[data-id='heated-fullerenes'] {
-			background: url(../../../img/heated-fullerenes.png) center no-repeat;
-		}
-
 		&:hover {
 			transform: scale(1.13);
 		}
-	}
-
-	&__offer {
-		color: #fff;
-	}
-
-	&__title {
-		font-weight: fonts.$weight-extra-bold;
-		font-size: 32px;
-		letter-spacing: fonts.$letter-spacing-title;
-		line-height: 36px;
-	}
-
-	&__sub-title {
-		margin: 10px 0 0 0;
-		font-weight: fonts.$weight-medium;
-		font-size: 20px;
-		letter-spacing: fonts.$letter-spacing-sub-title;
 	}
 
 	&__wrap-block {
