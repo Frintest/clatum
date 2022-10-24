@@ -6,6 +6,9 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -46,30 +49,6 @@ html {
 	}
 }
 
-a {
-	text-decoration: none;
-}
-
-ul,
-ol,
-li {
-	list-style-type: none;
-}
-
-img {
-	vertical-align: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: inherit;
-	font-size: inherit;
-}
-
 html,
 body {
 	height: 100%;
@@ -86,4 +65,35 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+}
+
+main {
+	display: block;
+	flex: 1 1 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+img,
+svg,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
 }

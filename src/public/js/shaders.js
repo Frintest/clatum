@@ -10,7 +10,7 @@ const canvasAll = document.querySelectorAll('.webgl').forEach((canvas) => {
 		let scene, renderer, camera;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0xffffff);
+		scene.background = new THREE.Color(0xFCF6F6);
 
 		renderer = new THREE.WebGLRenderer({
 			canvas,
@@ -47,6 +47,18 @@ const canvasAll = document.querySelectorAll('.webgl').forEach((canvas) => {
 
 			case 'heated-fullerenes':
 				texture = new THREE.TextureLoader().load('./img/heated-fullerenes.png');
+
+				break;
+			case 'electroscope':
+				texture = new THREE.TextureLoader().load('./img/electroscope.png');
+				break;
+
+			case 'ammeter':
+				texture = new THREE.TextureLoader().load('./img/ammeter.png');
+				break;
+
+			case 'magnet':
+				texture = new THREE.TextureLoader().load('./img/magnet.png');
 		}
 
 		material = new THREE.ShaderMaterial({

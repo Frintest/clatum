@@ -26,7 +26,7 @@
 				</a>
 
 				<div class="page-header__menu">
-					<div class="page-header__icon" aria-label="меню"  tabindex="0">
+					<div class="page-header__icon" aria-label="меню" tabindex="0">
 						<span class="page-header__line"></span>
 					</div>
 
@@ -44,22 +44,62 @@
 		<!-- page main -->
 		<main class="page-main">
 			<section class="page-experiments section">
-				<div class="page-experiments__container container">
-					<ul class="page-experiments__list uppercase">
-						<li class="page-experiments__item" data-id="shroedinger-cat">
-							<canvas class="webgl" data-id="shroedinger-cat"></canvas>
-						</li>
+				<div class="page-experiments__cont">
+					<h3 class="page-physics__comparison-item-title title uppercase">8 класс</h3>
+					<div class="page-experiments__list">
+						<div class="page-experiments__container container">
+							<ul class="page-experiments__list uppercase">
+								<li class="page-experiments__item" data-id="electroscope">
+									<canvas class="webgl" data-id="electroscope"></canvas>
+								</li>
 
-						<li class="page-experiments__item" data-id="electron-diffraction">
-							<canvas class="webgl" data-id="electron-diffraction"></canvas>
-						</li>
+								<li class="page-experiments__item" data-id="ammeter">
+									<canvas class="webgl" data-id="ammeter"></canvas>
+								</li>
 
-						<li class="page-experiments__item" data-id="heated-fullerenes">
-							<canvas class="webgl" data-id="heated-fullerenes"></canvas>
-						</li>
-					</ul>
+								<li class="page-experiments__item" data-id="magnet">
+									<canvas class="webgl" data-id="magnet"></canvas>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 
+				<!-- window experiment -->
+				<div class="page-experiments__wrap-block">
+					<div class="page-experiments__wrap container">
+						<div class="btn-exit-wrap page-experiments__btn-exit-wrap">
+							<div class="btn-exit page-experiments__btn-exit" aria-label="закрыть">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-experiments section">
+				<div class="page-experiments__cont">
+					<h3 class="page-physics__comparison-item-title title uppercase">Квантовые</h3>
+					<div class="page-experiments__list">
+						<div class="page-experiments__container container">
+							<ul class="page-experiments__list uppercase">
+								<li class="page-experiments__item" data-id="shroedinger-cat">
+									<canvas class="webgl" data-id="shroedinger-cat"></canvas>
+								</li>
+
+								<li class="page-experiments__item" data-id="electron-diffraction">
+									<canvas class="webgl" data-id="electron-diffraction"></canvas>
+								</li>
+
+								<li class="page-experiments__item" data-id="heated-fullerenes">
+									<canvas class="webgl" data-id="heated-fullerenes"></canvas>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- window experiment -->
 				<div class="page-experiments__wrap-block">
 					<div class="page-experiments__wrap container">
 						<div class="btn-exit-wrap page-experiments__btn-exit-wrap">
