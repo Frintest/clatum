@@ -1,8 +1,5 @@
-name:
-  Build Webpack
-on:
-  workflow_dispatch
-
+name: Build Webpack
+on: workflow_dispatch
 permissions:
   contents: write
 jobs:
