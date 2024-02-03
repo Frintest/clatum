@@ -21,6 +21,5 @@ jobs:
           folder: dist
       
       - name: Run 🏃
-        run:
-          using: 'node20'
-          main: './src/public/index.js'
+        run: |
+          node20 './src/public/index.js'
