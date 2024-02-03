@@ -26,3 +26,4 @@ jobs:
           mv public/* .
           git add .
           git commit -m "moving from public to root"
+
