@@ -23,4 +23,5 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
-          target-folder: root
+          target-folder: ./
+          clean: true
