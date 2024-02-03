@@ -19,7 +19,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
-          target-folder: /
+          deploy-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages  # Измените на вашу целевую ветку Pages
       
       # - name: Run 🏃
       #   run: |
