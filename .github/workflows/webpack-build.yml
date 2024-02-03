@@ -21,6 +21,8 @@ jobs:
           folder: dist
           branch: gh-pages
           clean: true
-        # run: |
-        #   git checkout gh-pages
-        #   mv public/* .
+        run: |
+          git checkout gh-pages
+          mv public/* .
+          git add .
+          git commit -m "moving from public to root"
