@@ -1,0 +1,70 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.page-expert-opinion {
+	&__sub-title {
+		font-weight: fonts.$weight-regular;
+		font-size: 24px;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	&__player {
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	&__btn {
+		width: 85px;
+		height: 85px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background: colors.$bg-body;
+		border: 2px solid colors.$color-title;
+		cursor: pointer;
+	}
+
+	&__volume-track {
+		-webkit-appearance: none;
+		width: 100px;
+		height: 5px;
+		position: absolute;
+		background: colors.$color-title;
+		border-radius: 0;
+		border: 0;
+		top: 50%;
+		left: 120px;
+		transform: translate(0, -50%);
+		cursor: pointer;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			width: 18px;
+			height: 25px;
+			background: colors.$color-title;
+			transition: sizes.$transition;
+		}
+
+		&::-moz-range-thumb {
+			width: 18px;
+			height: 25px;
+			background: colors.$color-title;
+			border-radius: 0;
+			border: 0;
+		}
+
+		&::-ms-thumb {
+			width: 18px;
+			height: 25px;
+			background: colors.$color-title;
+			border-radius: 0;
+			border: 0;
+		}
+	}
+}

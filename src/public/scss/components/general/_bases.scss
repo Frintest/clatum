@@ -1,0 +1,97 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+canvas {
+	display: block;
+}
+
+.title {
+	width: 100%;
+	font-weight: fonts.$weight-extra-bold;
+	font-size: sizes.$size-title;
+	color: colors.$color-title;
+	letter-spacing: fonts.$letter-spacing-title;
+	text-align: center;
+}
+
+.sub-title {
+	font-weight: fonts.$weight-medium;
+	font-size: 20px;
+	color: colors.$color-sub-title;
+	letter-spacing: fonts.$letter-spacing-sub-title;
+	line-height: 28px;
+
+	&-medium {
+		font-weight: fonts.$weight-medium;
+	}
+}
+
+.section {
+	margin: 100px 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.page-main-screen-wrapper {
+	width: 100%;
+	position: absolute;
+}
+
+.btn-exit-wrap {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.btn-exit {
+	z-index: 35;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+	& span,
+	&::after {
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		transition: sizes.$transition;
+	}
+
+	&::after {
+		content: '';
+		bottom: 0;
+	}
+
+	& span {
+		top: 50%;
+		transform: rotate(-45deg) translate(0, -50%);
+	}
+
+	&::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0, 50%);
+	}
+}

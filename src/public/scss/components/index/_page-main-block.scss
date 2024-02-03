@@ -1,0 +1,83 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/fonts';
+@use '../../abstracts/sizes';
+
+.page-main-block {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background: url(../../../img/main-block-bg.svg) center no-repeat;
+	background-size: cover;
+
+	&__title {
+		max-width: 100%;
+		padding: 0 30px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__btn-wrap {
+		position: relative;
+		margin: 0 0 60px 0;
+	}
+
+	&__sponsor {
+		max-width: 90px;
+		position: absolute;
+		top: 50%;
+		left: -150px;
+		transform: translate(0, -50%);
+		font-weight: fonts.$weight-extra-bold;
+		font-size: 13px;
+		color: #333;
+		letter-spacing: 0.4px;
+		line-height: 15px;
+
+		&::before {
+			content: '';
+			width: 14px;
+			height: 2px;
+			position: absolute;
+			top: -5px;
+			left: -2px;
+			background: #333;
+		}
+	}
+
+	&__btn {
+		width: 120px;
+		height: 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		border-radius: 50%;
+		background: colors.$bg-body;
+		border: 2px solid colors.$color-title;
+		transition: sizes.$transition;
+		cursor: pointer;
+
+		&:hover {
+			background: colors.$color-title;
+		}
+
+		&:hover .page-main-block__svg {
+			fill: #fff;
+		}
+
+		&:active {
+			background: colors.$bg-body;
+			transition: 0s;
+		}
+
+		&:active .page-main-block__svg {
+			fill: colors.$color-title;
+		}
+	}
+
+	&__svg {
+		transition: sizes.$transition;
+	}
+}

@@ -1,0 +1,151 @@
+@media (max-width: 1000px) {
+
+	/********** page physics **********/
+	.page-physics {
+		&__list {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__comparison {
+			&-block {
+				justify-content: center;
+			}
+
+			&-item {
+				margin: 0;
+				flex: 0 1 626px;
+			}
+
+			&-svg {
+				display: none;
+			}
+		}
+
+		&__video-player-wrap>video {
+			max-width: 780px;
+		}
+	}
+
+	/********** page output **********/
+	.page-output__sub-title {
+		max-width: 700px;
+	}
+}
+
+@media (max-width: 900px) {
+
+	/********** page physics **********/
+	.page-physics__video-player-wrap>video {
+		max-width: 630px;
+	}
+}
+
+@media (max-width: 720px) {
+
+	/********** page physics **********/
+	.page-physics {
+		&__title {
+			font-size: 28px;
+		}
+
+		&__comparison {
+			&-block:first-child {
+				margin: 0;
+			}
+
+			&-item {
+				padding: 0 10px;
+
+				&-title {
+					font-size: 34px;
+				}
+			}
+		}
+
+		&__video-player-wrap>video {
+			max-width: 520px;
+		}
+	}
+
+	/********** page expert opinion **********/
+	.page-expert-opinion__sub-title {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	/********** page physics **********/
+	.page-physics__video-player-wrap>video {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	/********** page physics **********/
+	.page-physics {
+		&__title {
+			font-size: 26px;
+		}
+
+		&__video {
+			width: 272px;
+			height: 150px;
+		}
+
+		&__video-player-wrap>video {
+			max-width: 300px;
+		}
+	}
+
+	/********** page expert opinion **********/
+	.page-expert-opinion {
+		&__sub-title {
+			font-size: 22px;
+		}
+
+		&__volume-track {
+			top: 140%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+
+	/********** page output **********/
+	.page-output__container {
+		margin: 120px 0 0 0;
+	}
+}
+
+@media (max-width: 460px) {
+
+	/********** page main block **********/
+	.page-main-block {
+		&__btn {
+			width: 100px;
+			height: 100px;
+		}
+
+		&__sponsor {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+
+	/********** page physics **********/
+	.page-physics {
+		margin: 10px 0 100px 0;
+	}
+}
+
+@media (max-width: 360px) {
+
+	/********** page physics **********/
+	.page-physics__comparison-item-title {
+		font-size: 28px;
+	}
+}

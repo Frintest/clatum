@@ -1,0 +1,18 @@
+@media (max-width: 839px) {
+
+	/********** page experiments **********/
+	.page-experiments__list {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 420px) {
+
+	/********** page experiments **********/
+	.page-experiments {
+		&__item {
+			width: 250px;
+			height: 250px;
+		}
+	}
+}
