@@ -19,6 +19,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
-runs:
-  using: 'node20'
-  main: './src/public/index.js'
+      
+      - name: Run 🏃
+        run:
+          using: 'node20'
+          main: './src/public/index.js'
