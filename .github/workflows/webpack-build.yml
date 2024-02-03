@@ -28,4 +28,5 @@ jobs:
           mv public/* .
           git add .
           git commit -m "moving from public to root"
+          git pull origin gh-pages --rebase
           git push origin gh-pages
