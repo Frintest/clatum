@@ -25,8 +25,7 @@ jobs:
       - name: Remove files
         run: |
           git checkout gh-pages
-          # mkdir tmp
-          # mv public/* tmp/
+          mv public/* .
           git add .
           git commit -m "moving from public to root"
           git push origin gh-pages
