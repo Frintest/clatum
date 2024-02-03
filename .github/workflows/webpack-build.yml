@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.1.1
 
       - name: Install 📥
         run: npm ci
@@ -20,6 +20,6 @@ jobs:
         with:
           folder: dist
       
-      - name: Run 🏃
-        run: |
-          node20 './src/public/index.js'
+      # - name: Run 🏃
+      #   run: |
+      #     node20 './src/public/index.js'
