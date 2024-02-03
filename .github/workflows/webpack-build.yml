@@ -23,5 +23,7 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
-          target-folder: ./
           clean: true
+        run: |
+          git checkout gh-pages
+          mv public/* .
