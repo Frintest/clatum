@@ -21,9 +21,10 @@ jobs:
           folder: dist
           branch: gh-pages
           clean: true
+
+      - name: Remove files
         run: |
           git checkout gh-pages
           mv public/* .
           git add .
           git commit -m "moving from public to root"
-
