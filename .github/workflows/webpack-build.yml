@@ -18,15 +18,15 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: dist/public
           branch: gh-pages
           clean: true
 
-      - name: Remove files
-        run: |
-          git checkout gh-pages
-          mv public/* .
-          git add .
-          git commit -m "moving from public to root"
-          git pull origin gh-pages --rebase
-          git push origin gh-pages
+      # - name: Remove files
+        # run: |
+          # git checkout gh-pages
+          # mv public/* .
+          # git add .
+          # git commit -m "moving from public to root"
+          # git pull origin gh-pages --rebase
+          # git push origin gh-pages
